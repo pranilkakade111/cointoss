@@ -24,3 +24,18 @@ else
 	echo $twin
 fi
 }
+
+function coinFlipSimulation() 
+{
+echo "Enter number of times to execute"
+read n
+for (( i=0 ; $i < n ; i++ ))
+do
+	if [ $hwin -eq 21  -o  $twin -eq 21 ] 
+	then
+		break
+	else
+	     coinFlip
+	fi
+done
+}
